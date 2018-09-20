@@ -1,0 +1,14 @@
+<h1>YOU CAN SEE THE count of words are {{COUNT2}}</h1>
+
+<a href="{% url 'home' %}">START AGAIN</a>
+
+<h1>YOUR INPUT:</h1>
+{{ COUNT1 }}
+
+<h1>WORD COUNT STARTS</h1>
+
+{% for word, counttotal in worddictionary %}
+
+{{word}} = {{counttotal}}
+<br />
+{% endfor %}
